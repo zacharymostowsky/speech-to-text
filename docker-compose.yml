@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  buri:
+    build: .
+    container_name: buri
+    volumes:
+      - "./:/root/speech-to-text-wavenet"
+    ports:
+      - "8888:8888"
